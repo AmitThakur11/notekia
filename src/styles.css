@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Rampart+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arsenal", sans-serif;
+  color: lig;
+}
+
+.App {
+  min-height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  width: 98%;
+  font-size: 24px;
+  align-self: center;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.logo .name {
+  font-size: 36px;
+  height: 100%;
+  font-weight: 600;
+}
+.logo > img {
+  width: 70px;
+  height: 70px;
+}
+
+.header-link {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+
+  color: black;
+}
+
+.header-link > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+header > div {
+  margin: 10px 20px;
+}
+
+.App > .input {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 300px;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+}
+
+.input > input,
+textarea {
+  padding: 10px;
+  margin: 1px;
+  font-size: 18px;
+  border: 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.input > textarea {
+  height: 100px;
+}
+.input > button {
+  background-color: rgb(14, 122, 230);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  margin-top: 5px;
+  font-weight: 600;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.result-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+.result {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  font-size: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  margin: 10px;
+  min-height: 200px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box > button {
+  position: absolute;
+  top: 40px;
+  right: 4px;
+
+  padding: 3px 8px;
+  min-width: fit-content;
+  border: 0;
+  background-color: #ad8ff0;
+  font-size: 18px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.box .pin {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: flex;
+  justify-content: center;
+
+  padding: 6px 10px;
+  min-width: fit-content;
+  border: 0;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: rgb(207, 203, 203);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.pin:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 28px;
+  color: #ef4444;
+  font-weight: 700;
+}
+.body {
+  width: fit-content;
+}
+
+.color-pallete {
+  display: flex;
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.input-color-pallete {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 130px;
+
+  padding: 5px 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  justify-content: space-between;
+}
+.color {
+  width: 15px;
+
+  height: 15px;
+  border-radius: 50%;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.color:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  border: 1px solid white;
+}
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    height: 80px;
+    width: 98%;
+    align-self: center;
+    font-size: 16px;
+  }
+
+  .logo > img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo > .name {
+    font-size: 24px;
+  }
+  .header-link {
+    display: flex;
+    width: 30%;
+  }
+  header > div {
+    margin: 10px 20px;
+  }
+
+  .App > .input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-width: 200px;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .input > input,
+  textarea {
+    padding: 10px;
+    margin: 1px;
+  }
+
+  .input > textarea {
+    height: 100px;
+  }
+  .input > button {
+    width: 20%;
+    font-size: 20px;
+  }
+
+  .result-container {
+    width: 50%;
+  }
+}
